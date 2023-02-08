@@ -1,6 +1,8 @@
+import java.util.List;
 import java.util.Scanner;
+import java.util.Random;
 import java.util.Arrays;
-
+import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Main {
                 String player1 = "";
                 String player2 = "";
                 // use the split function split function basically split the input and store
-                // them in arrays
+                // them in arrays (the user have to input command between given cases below)
                 if (command.split(" ").length == 1)
                     mode = command.split(" ")[0];
                 if (command.split(" ").length == 3) {
@@ -23,7 +25,7 @@ public class Main {
                     player1 = command.split(" ")[1];
                     player2 = command.split(" ")[2];
                 }
-                // analyze verb
+                
                 // bad input function check wheather the input is valid or not.//if the user
                 // enters any string
                 // other than easy medium hard and user it will print that the input is a bad
@@ -123,14 +125,14 @@ public class Main {
                     move1 = scanner.nextInt();
                 } else {
                     scanner.nextLine();
-                    System.out.println("You should enter numbers!");
+                    System.out.println("You should enter numbers (Should be from 1-3)!");
                     continue;
                 }
                 if (scanner.hasNextInt()) {
                     move2 = scanner.nextInt();
                 } else {
                     scanner.nextLine();
-                    System.out.println("You should enter numbers!");
+                    System.out.println("You should enter numbers (Should be from 1-3)!");
                     continue;
                 }
             }
