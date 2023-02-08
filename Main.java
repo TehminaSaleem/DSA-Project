@@ -37,6 +37,7 @@ public class Main {
                         for (String player : new String[] { player1, player2 }) {
                             // analyze players
                             switch (player) {
+                                    // three levels of game
                                 case "easy":
                                 case "medium":
                                 case "hard":
@@ -58,7 +59,7 @@ public class Main {
                         inGame = false;
                 }
                 if (badInput) {
-                    System.out.println("Bad parameters!");
+                    System.out.println("Bad parameters! Give command again");
                     inGame = false;
                 }
 
