@@ -1,8 +1,5 @@
-import java.util.List;
 import java.util.Scanner;
-import java.util.Random;
 import java.util.Arrays;
-import java.util.ArrayList;
 
 public class Main {
 
@@ -136,3 +133,31 @@ public class Main {
                     System.out.println("You should enter numbers!");
                     continue;
                 }
+            }
+        }
+    }
+
+    private static boolean gameState(char[][] board) {
+        return true;
+    }
+
+    private static void mediumMove(char[][] board, int player) {
+    }
+
+    private static void easyMove(char[][] board, int player) {
+    }
+
+    private static void hardMove(char[][] board, int player) {
+
+    }
+
+    private static void display(char[][] stato) {
+        System.out.println("---------");
+        System.out.println("| " + stato[0][0] + ' ' + stato[0][1] + ' ' + stato[0][2] + " |");
+        System.out.println("| " + stato[1][0] + ' ' + stato[1][1] + ' ' + stato[1][2] + " |");
+        System.out.println("| " + stato[2][0] + ' ' + stato[2][1] + ' ' + stato[2][2] + " |");
+        System.out.println("---------");
+
+    }
+
+}
